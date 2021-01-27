@@ -70,7 +70,7 @@
                 </a>
             </li>
             <li >
-                <a href="/archives">
+                <a href="/archive">
                     <i class="iconfont icon-guidang2"></i>
                     <span>存档</span>
                 </a>
@@ -79,6 +79,13 @@
                 <a href="/about/">
                     <i class="iconfont icon-guanyu2"></i>
                     <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
                 </a>
             </li>
             
@@ -116,9 +123,9 @@
     <div class="donate-button">
         <button id="donate-button">赞赏</button>
     </div>
-    <div class="donate-img-container" id="donate-img-container">
-        <img id="donate-img" src="/img/donate.jpg" data-src="/img/donate.jpg">
-        <p> 感谢鼓励 </p>
+    <div class="donate-img-container hide" id="donate-img-container">
+        <img id="donate-img" src="" data-src="/img/donate.jpg">
+        <p> 在线乞讨 </p>
     </div>
 </div>
     
@@ -168,7 +175,7 @@
 
 <script>
     // We expose some of the variables needed by the front end
-    window.hexo_search_path = ""
+    window.hexo_search_path = "search.json"
     window.hexo_root = "/"
     window.isPost = false
 </script>

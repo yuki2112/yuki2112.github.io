@@ -831,7 +831,6 @@ body {
 }
 .donate-container .donate-button button:active {
   background-color: darkorange;
-
 }
 .donate-container .donate-img-container {
   display: flex;
