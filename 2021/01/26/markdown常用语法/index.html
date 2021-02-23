@@ -145,7 +145,7 @@
 </span>
     </div>
     <div class="post-content no-indent">
-        <h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 这是一级标题</span><br><span class="line">## 这是二级标题</span><br><span class="line">### 这是三级标题</span><br><span class="line">#### 这是四级标题</span><br><span class="line">##### 这是五级标题</span><br><span class="line">###### 这是六级标题</span><br></pre></td></tr></table></figure>
+        <h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 这是一级标题</span><br><span class="line">## 这是二级标题</span><br><span class="line">### 这是三级标题</span><br><span class="line">#### 这是四级标题</span><br><span class="line">##### 这是五级标题</span><br><span class="line">###### 这是六级标题</span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
 <h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h4><h5 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h5><h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6><hr>
 <h2 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h2><ul>
@@ -155,13 +155,13 @@
 <li>删除线<br>要加删除线的文字左右分别用两个~~号包起来</li>
 </ul>
 <p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**这是加粗的文字**</span><br><span class="line">*这是倾斜的文字*&#96;</span><br><span class="line">***这是斜体加粗的文字***</span><br><span class="line">~~这是加删除线的文字~~</span><br></pre></td></tr></table></figure>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="strong">**这是加粗的文字**</span></span><br><span class="line"><span class="strong">*这是倾斜的文字*</span>`</span><br><span class="line"><span class="strong">***这是斜体加粗的文字**</span>*</span><br><span class="line">~~这是加删除线的文字~~</span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
 <p><strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em>`<br><strong><em>这是斜体加粗的文字</em></strong><br><del>这是加删除线的文字</del></p>
 <hr>
 <h2 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h2><p>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;<br>n个…</p>
 <p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;这是引用的内容</span><br><span class="line">&gt;&gt;这是引用的内容</span><br><span class="line">&gt;&gt;&gt;这是引用的内容</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">这是引用的内容</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;这是引用的内容</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash">&gt;&gt;这是引用的内容</span></span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
 <blockquote>
 <p>这是引用的内容</p>
@@ -175,30 +175,30 @@
 <hr>
 <h2 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h2><p>三个或者三个以上的-或*都可以。</p>
 <p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">----</span><br><span class="line">***</span><br><span class="line">****</span><br></pre></td></tr></table></figure>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">----</span><br><span class="line"><span class="strong">***</span></span><br><span class="line"><span class="strong">***</span>*</span><br></pre></td></tr></table></figure>
 <p>效果如下：<br>显示效果是一样的。</p>
 <hr>
 <hr>
 <hr>
 <hr>
 <h2 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h2><p>语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址&quot;图片title&quot;)</span><br><span class="line">图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</span><br><span class="line">图片title是图片的标题，当鼠标移到图片上时现实的内容。title可加可不加。</span><br></pre></td></tr></table></figure>
+<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址&quot;图片<span class="built_in">title</span>&quot;)</span><br><span class="line">图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</span><br><span class="line">图片<span class="built_in">title</span>是图片的标题，当鼠标移到图片上时现实的内容。<span class="built_in">title</span>可加可不加。</span><br></pre></td></tr></table></figure>
 <p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![琴子](https:&#x2F;&#x2F;cdn.reimu.net&#x2F;uploads&#x2F;2021&#x2F;01&#x2F;kotoko84.jpg &quot;琴子100アイコン配布素材&quot;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![琴子](https:<span class="regexp">//</span>cdn.reimu.net<span class="regexp">/uploads/</span><span class="number">2021</span><span class="regexp">/01/</span>kotoko84.jpg <span class="string">&quot;琴子100アイコン配布素材&quot;</span>)</span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
 <p><img src="https://cdn.reimu.net/uploads/2021/01/kotoko84.jpg" alt="琴子" title="琴子100アイコン配布素材"></p>
 <hr>
 <h2 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h2><p>语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[超链接名](超链接地址&quot;超链接title&quot;)</span><br><span class="line">title可加可不加</span><br></pre></td></tr></table></figure>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-attr">[超链接名]</span>(超链接地址<span class="string">&quot;超链接title&quot;</span>)</span><br><span class="line"><span class="selector-tag">title</span>可加可不加</span><br></pre></td></tr></table></figure>
 <p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[百度](http:&#x2F;&#x2F;baidu.com)</span><br><span class="line">[DuckDuckGoog](http:&#x2F;&#x2F;www.duckduckgoog.com&#x2F;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-attr">[百度]</span>(<span class="selector-tag">http</span>://<span class="selector-tag">baidu</span><span class="selector-class">.com</span>)</span><br><span class="line"><span class="selector-attr">[DuckDuckGoog]</span>(<span class="selector-tag">http</span>://<span class="selector-tag">www</span><span class="selector-class">.duckduckgoog</span><span class="selector-class">.com</span>/)</span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
 <p><a target="_blank" rel="noopener" href="http://baidu.com/">百度</a><br><a target="_blank" rel="noopener" href="http://www.duckduckgoog.com/">DuckDuckGoog</a></p>
 <p>注：如果想在新页面中打开可以用html语言的a标签代替</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href&#x3D;&quot;超链接地址&quot; target&#x3D;&quot;_black&quot;&gt;超链接名&lt;&#x2F;a&gt;</span><br><span class="line">示例</span><br><span class="line">&lt;a href&#x3D;&quot;http:&#x2F;&#x2F;www.baidu.com&#x2F;&quot; target&#x3D;&quot;_black&quot;&gt;百度&lt;&#x2F;a&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;a <span class="attribute">href</span>=<span class="string">&quot;超链接地址&quot;</span> <span class="attribute">target</span>=<span class="string">&quot;_black&quot;</span>&gt;超链接名&lt;/a&gt;</span><br><span class="line">示例</span><br><span class="line">&lt;a <span class="attribute">href</span>=<span class="string">&quot;http://www.baidu.com/&quot;</span> <span class="attribute">target</span>=<span class="string">&quot;_black&quot;</span>&gt;百度&lt;/a&gt;</span><br></pre></td></tr></table></figure>
 <hr>
 <h2 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h2><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>语法：<br>无需列表用-+*任何一种都可以</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- 列表内容</span><br><span class="line">+ 列表内容</span><br><span class="line">* 列表内容</span><br><span class="line">注意+-*与内容之间都要有一个空格</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> 列表内容</span><br><span class="line"><span class="bullet">+</span> 列表内容</span><br><span class="line"><span class="bullet">*</span> 列表内容</span><br><span class="line">注意+-<span class="emphasis">*与内容之间都要有一个空格</span></span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
 <ul>
 <li>列表内容</li>
@@ -210,7 +210,7 @@
 <li>列表内容</li>
 </ul>
 <h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>语法：<br>数字加点</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. 列表内容</span><br><span class="line">2. 列表内容</span><br><span class="line">3. 列表内容</span><br><span class="line">注意序号与内容间要有空格</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.</span> 列表内容</span><br><span class="line"><span class="bullet">2.</span> 列表内容</span><br><span class="line"><span class="bullet">3.</span> 列表内容</span><br><span class="line">注意序号与内容间要有空格</span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
 <ol>
 <li>列表内容</li>
@@ -250,9 +250,9 @@
 </blockquote>
 <hr>
 <h2 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h2><p>语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">---|:--:|---:</span><br><span class="line">内容|内容|内容</span><br><span class="line">内容|内容|内容</span><br><span class="line"></span><br><span class="line">第二行分割表头和内容。</span><br><span class="line">- 有一个就行，为了对齐，多加了几个</span><br><span class="line">文字默认居左</span><br><span class="line">-两边加：表示文字居中</span><br><span class="line">-右边加：表示文字居右</span><br><span class="line">注：原生的语法两边都要用 | 包起来。此处省略</span><br></pre></td></tr></table></figure>
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">表头|<span class="string">表头</span>|<span class="string">表头</span></span><br><span class="line"><span class="string">---</span>|<span class="string">:--:</span>|<span class="string">---:</span></span><br><span class="line"><span class="string">内容</span>|<span class="string">内容</span>|<span class="string">内容</span></span><br><span class="line"><span class="string">内容</span>|<span class="string">内容</span>|<span class="string">内容</span></span><br><span class="line"></span><br><span class="line"><span class="string">第二行分割表头和内容。</span></span><br><span class="line"><span class="string">- 有一个就行，为了对齐，多加了几个</span></span><br><span class="line"><span class="string">文字默认居左</span></span><br><span class="line"><span class="string">-两边加：表示文字居中</span></span><br><span class="line"><span class="string">-右边加：表示文字居右</span></span><br><span class="line"><span class="string">注：原生的语法两边都要用 </span>|<span class="string"> 包起来。此处省略</span></span><br></pre></td></tr></table></figure>
 <p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">姓名|性别|年龄</span><br><span class="line"> :- | :-: | -: </span><br><span class="line">张三|男|24</span><br><span class="line">李四|女|17</span><br><span class="line">秀吉|无|无</span><br></pre></td></tr></table></figure>
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">姓名|<span class="string">性别</span>|<span class="string">年龄</span></span><br><span class="line"><span class="string"> :- </span>|<span class="string"> :-: </span>|<span class="string"> -: </span></span><br><span class="line"><span class="string">张三</span>|<span class="string">男</span>|24</span><br><span class="line">李四|<span class="string">女</span>|17</span><br><span class="line">秀吉|<span class="string">无</span>|<span class="string">无</span></span><br></pre></td></tr></table></figure>
 <p>效果如下:</p>
 <table>
 <thead>
@@ -282,20 +282,20 @@
 <h2 id="九、代码"><a href="#九、代码" class="headerlink" title="九、代码"></a>九、代码</h2><p>语法：<br>单行代码：代码之间分别用一个反引号包起来</p>
 <p><code>代码内容</code></p>
 <p>代码块：代码之间分别用三个反引号包起来，且两边单独占一行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(&#96;&#96;&#96;)</span><br><span class="line">    代码..</span><br><span class="line">    代码..</span><br><span class="line">    代码..</span><br><span class="line">(&#96;&#96;&#96;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">(```)</span><br><span class="line">    代码..</span><br><span class="line">    代码..</span><br><span class="line">    代码..</span><br><span class="line">(```)</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>注：防止转译加上了括号，实际不需要。</p>
 </blockquote>
 <p>示例：</p>
 <p>单行代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#96;crete database hero;&#96;</span><br></pre></td></tr></table></figure>
+<figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">`crete database hero;`</span></span><br></pre></td></tr></table></figure>
 <p>代码块</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(&#96;&#96;&#96;)</span><br><span class="line">    #!&#x2F;usr&#x2F;bin&#x2F;python3</span><br><span class="line">    </span><br><span class="line">    def hello() :</span><br><span class="line">        print(&quot;Hello World!&quot;)</span><br><span class="line">    hello()</span><br><span class="line">(&#96;&#96;&#96;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">(```)</span><br><span class="line">    #!/usr/bin/python3</span><br><span class="line">    </span><br><span class="line"><span class="title">    def hello() :</span></span><br><span class="line">        print(<span class="string">&quot;Hello World!&quot;</span>)</span><br><span class="line">    hello()</span><br><span class="line">(```)</span><br></pre></td></tr></table></figure>
 <p>效果如下：</p>
 <p>单行代码</p>
 <p><code>crete database hero;</code></p>
 <p>代码块</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#!&#x2F;usr&#x2F;bin&#x2F;python3</span><br><span class="line"></span><br><span class="line">def hello() :</span><br><span class="line">    print(&quot;Hello World!&quot;)</span><br><span class="line">hello()</span><br></pre></td></tr></table></figure>
+<figure class="highlight d"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/usr/bin/python3</span></span><br><span class="line"></span><br><span class="line">def hello() :</span><br><span class="line">    print(<span class="string">&quot;Hello World!&quot;</span>)</span><br><span class="line">hello()</span><br></pre></td></tr></table></figure>
 
         
             <div class="donate-container">
